@@ -1,0 +1,1579 @@
+@@@ 100 Files menu
+This menu provides access to the file directory, 
+the methods store/load screen, the file translation 
+utilities, the shell to DOS function, and the 
+program exit command. 
+@@@ 101 Run menu
+This menu provides access to the data acquisition 
+setup screens, the load background screen, and sets 
+the data acquisition type (Accumulate, Accum-B, 
+Live, Live to Disk and Live-B). 
+@@@ 102 Plot menu
+This menu provides access to the plot setup screen 
+and permits sending the setup to the screen, plotter,
+or printer. 
+@@@ 103 Calibration menu
+This menu provides access to the X-axis 
+calibration function and to spectrograph 
+control via the GPIB. 
+@@@ 104 Math menu
+This menu provides access to the Binary and Set 
+Baseline screens for curve manipulation.
+@@@ 105 Configuration menu
+This menu provides access to the Configuration 
+screen. This screen is used to designate the GPIB
+addresses for multiple detectors, read a parameter
+setup from the selected detector, load one into the
+selected detector, or read data out of the selected
+detector.
+@@@ 106 Scan menu
+This menu allows you to set up the scan of a CCD 
+array. The scan parameters determine how the
+analog signal acquired by the array is read out. 
+@@@ 107 Keystroke menu
+This menu allows you to begin recording or
+playing back a keystroke program.
+@@@ 400 Directory screen
+This menu selection displays the Curve Directory,
+the current DOS Files Directory, and the FileSpec
+entry field. In addition, selecting a file in the
+DOS Files Directory opens a subscreen where you
+can load, delete, save, or rename that dataset and
+select a plot screen display window.  
+@@@ 401 Methods screen
+This menu selection opens the Methods screen. The
+Methods screen allows you to save a method to 
+a disk file or to load all or part of a method 
+from a disk file. A method contains the parameter
+information used to set up data acquisition, as 
+well as the calibration and plot setup information.
+@@@ 402 Translate screen
+This menu selection opens the Translate screen.  
+The Translate screen allows you to convert a set
+of OMA 2000 file data to another format and then
+store the translated version to disk. OMA 2000 data 
+can be converted to 1460 OMA format, 1470 OMA
+format, ASCII single column format (with or without
+calibrated values), or ASCII multiple column format
+(with or without calibrated values). 
+@@@ 403 Dos Shell
+This menu selection allows you to temporarily exit
+the program to go into DOS. By using DOS Shell,
+you can access DOS capabilities without losing 
+your data or quitting the program. Returning from
+DOS is accomplished by typing EXIT at the 
+DOS prompt and pressing the <Enter> key.
+@@@ 404 Exit to DOS
+The Exit selection exits the program and returns
+you to DOS. Save any data of interest before 
+exiting. 
+@@@ 500 Plot Setup screen selection (Plot menu)
+This Plot menu selection opens the Plot Setup
+screen. The Plot Setup allows you to define the
+parameters to be used in plotting data to the display
+screen, a plotter, or a printer. The parameters 
+include the plot title, the axes labels, minimum and
+maximum values, and units to be used. Adjustments
+to the Z Axis, the plotting format, and window layout
+are also made in this screen. 
+@@@ 501 Screen (Plot menu)
+This Plot menu selection uses the Plot Setup 
+parameters to define the way in which data is
+displayed on the Plot screen.  
+@@@ 502 Plotter (Plot menu)
+This Plot menu selection uses the Plot Setup 
+parameters to define the way in which data is
+drawn on an attached plotter. 
+@@@ 503 Printer (Plot menu)
+This Plot menu selection uses the Plot Setup 
+parameters to define the way in which data is
+drawn on an attached printer. 
+@@@ 600 Setup screen (Run menu)
+This Run menu selection opens the acquisition
+setup screen. This screen allows you to specify
+detector type, data acquisition mode, exposure
+time, synchronization, triggering and source
+compensation mode, as appropriate.
+@@@ 601 Accum acquisition (Run menu)
+This Run menu selection changes the data 
+acquisition mode so that the Accumulate 
+mode will be used when <F2> is pressed.
+@@@ 602 Accum-B acquisition (Run menu)
+This Run menu selection the data acquisition
+mode so that the Accumulate-Background mode
+will be used when <F2> is pressed. In this 
+mode, the currently selected background curves
+are subtracted from the data.
+@@@ 603 Live acquisition (Run menu)
+This Run menu selection allows you to enter the 
+curve set name to be used when Live curves are 
+captured and stored in memory and tells the 
+program to acquire data using the Live mode when
+<F2> is pressed.
+@@@ 604 Live to Disk acquisition (Run menu)
+This Run menu selection allows you to enter a 
+destination filename to be used by the program
+when Live to Disk acquisition is begun. It also
+tells the program to acquire data using the Live to
+Disk mode when <F2> is pressed. Live to Disk data 
+is stored directly to disk using the filename 
+supplied. Unlike other acquisition modes, the data
+is not displayed on screen during acquisition.
+@@@ 605 Live-B (Run menu)
+This Run menu selection allows you to enter the 
+curve set name to be used when Live-B data is 
+captured and stored in memory and tells the 
+program to acquire data using the Live-Background
+mode when <F2> is pressed. In this mode, the
+currently selected background is subtracted from 
+the Live data before the data is displayed or stored.
+@@@ 606 Background acquisition (Run menu)
+This Run menu selection allows you to specify a 
+file and range of curves to be used for background
+subtraction when either Accum-B or Live-B data
+acquisition is run. A background or set of 
+background curves must be loaded into memory
+before background-subtracted acquisition modes
+can be activated.
+@@@ 650 New Calibration (Calib menu)
+This menu provides access to the X-axis calibration 
+function. Linear, square, or cubic X-axis calibration
+can be performed for one or more plot windows.
+@@@ 920 Spectrograph Control (Calib menu)
+This menu provides access to spectrograph control
+of a Model 1235, 1236, or 1237. Control of the 
+spectrograph is via the GPIB. At this time the 
+software supports only one GPIB-controlled 
+spectrograph per configuration. 
+@@@ 700 Binary screen (Math menu)
+This Math menu selection opens the Binary screen.
+This screen allows you to perform simple math 
+operations on datasets and store the results to disk.
+The operators available in this screen are +, -, *, /,
+log, and ln.
+@@@ 701 Set Baseline (Math)
+This Math menu selection opens the Set Baseline
+screen. The operations in this screen allow you
+to manually or automatically generate a baseline
+spline curve using a curve displayed in Window 1.
+The resulting baseline curve can be saved and 
+used later for baseline correction.
+@@@ 800 Graph mode
+The program is currently operating in Graph mode.
+This means that the cursor now moves along 
+displayed curves, between curves, and between 
+windows. The information in the cursor bar, located
+below the menu bar, describes the cursor location
+in terms of plot #, X axis, Y axis (intensity), and
+Z axis (curve). If the current curve is from a file,
+the filename is displayed. The curve #, as loaded,
+is displayed as well. In addition, the type of 
+acquisition is displayed if data is being acquired.
+
+To return to Menu mode, press <F10> Menus or
+<Esc>. While in Menu mode, the cursor moves
+from menu to menu and between parameter fields.
+@@@ 1200 configuration
+Help message 1200 not implemented.
+@@@ 1300 Background Curve Name (Background
+Enter the name of a file to be used for selecting
+a background curve or set of background curves for
+Live-B or Accum-B data acquisition modes. To 
+maximize the benefits of background subtraction, 
+the data acquisition setup used to acquire this 
+data file should match those currently selected.
+@@@ 1301 Start curve #
+Enter the curve number of the curve to be used
+as the first curve in the set of curves. The default
+Curve Start is the first curve in the named file. 
+Curve numbers are 0-based: that is to say, the very
+first curve in an acquisition is Curve 0.
+@@@ 1302 Count
+Enter the total number of curves to be used for
+background subtraction.  
+@@@ 1303 Load Background Curve
+When this action is selected by pressing <Enter>,
+the selected curves from the named file will be 
+loaded into a Background buffer. These curves will
+be used to subtract out background noise or other
+unwanted signals when either Live-B or Accum-B 
+data acquisition is run.
+@@@ 1304
+Help message 1304 not implemented.
+@@@ 1400 Xp Units (Calibration screen)
+Select the units most appropriate for what the 
+X axis represents, if the default shown is not 
+applicable.
+@@@ 1401 Excitation (nm) (Calibration screen)
+Enter the excitation level or laser line in
+nanometers if Raman shift spectroscopy is being 
+performed. If you are performing fluorescence
+experiments, you may also want to enter the
+excitation level as a reference.
+@@@ 1402 
+Help message 1402 not implemented.
+@@@ 1403 Degree of Fit (Calibration screen)
+Select the type of X axis calibration desired from
+the three types of calibration available:
+   Linear:  Uses a linear equation to determine the
+      best straight line that fits between 2 or more
+      data points. Recommended for situations in
+      which the calibration units and the pixel
+      spacing have a linear or near-linear relation-
+      ship. At least 2 points must be selected. 
+   Square:  Uses a second order equation to determine
+      the best curve that fits between 3 or more data
+      points. At least 3 points must be selected. 
+   Cubic: Uses a third order equation to determine
+      the best curve that fits between 4 or more data
+      points. Recommended for situations in which there
+      is non-linear relationship between the calibration
+      units and the pixel spacing. At least 4 points 
+      must be selected. 
+@@@ 1404 Select Points (Calibration screen)
+Accesses the plot window for point selection. Points
+are selected by moving the cursor to the point of 
+interest and pressing <Enter>. This action opens
+the value entry box for that X axis location. Enter
+the new value and press <Enter>. After the required
+number of points have been selected, press <Esc> to
+quit point selection. 
+@@@ 1405 Apply to (Calibration screen)
+Select the curves that the calibration should be
+applied to. The three possible choices are:
+   Curve at Cursor:  Applies the calibration
+      only to the curve that the cursor is on.
+   All Curves in Window:  Applies the calibration
+      to all curves in the window.
+   All Pixel Conversions:  Applies the calibration
+      to the curves in the window, to all 
+      subsequently loaded uncalibrated curves, and
+      to subsequently acquired curves.
+@@@ 1406 Delete Point (Calibration screen)
+Deletes the selected X Unit Value. To select a
+point for deletion, <Tab> to the X Unit Value 
+parameter field and use the up/down cursor
+keys to position the cursor on the point. Then,
+move to the Delete Point field and press <Enter>. 
+@@@ 1407 Perform New Calibration (Calibration
+Select the calibration action you want to perform.
+The four choices are:
+   Perform New Calibration: Performs the X axis 
+      calibration using the degree of fit and 
+      points selected. At least two points must
+      be selected for linear fit; three for square;
+      and four for cubic.
+   Apply Current Calibration: If "all pixel 
+      conversions" was not selected in "Apply to",
+      this choice applies the calibration in memory
+      to the displayed uncalibrated curve/s.
+   Extract Coefficients from Calibrated Curve: 
+      Extracts the calibration coefficients from a
+      displayed calibrated file and writes these
+      coefficients over the ones already in memory.
+      This allows you to reset the calibration in 
+      memory to the calibration in a file.
+   Uncalibrate:  Returns the calibrated curve set
+      to pixel units. 
+@@@ 1408 Xp = Excitation + _P+_P2+_P3
+This value is that of the first calibration
+coefficient.
+@@@ 1409 P (Calibration)
+This value is that of the second calibration
+coefficient. "P" is the current X value.
+@@@ 1410 P squared (Calibration)
+This value is that of the third calibration
+coefficient. "P" is the current X value.
+@@@ 1411 P cubed (Calibration screen)
+This value is that of the fourth calibration
+coefficient. "P" is the current X value.
+@@@ 1500 Spectrograph (Spec Control)
+The OMA2000 software is capable of controlling
+a Model 1235, 1236, or 1237 spectrograph. The
+choices available at any one time, however, are
+??? and 123X (where X is either 5, 6, or 7). 
+??? represents an unknown, unpowered, or 
+connected but unused spectrograph. 123X is the 
+model number read in from the OMA2000.MET
+file at bootup, from another method file after
+bootup, or from the spectrograph itself during
+bootup.
+@@@ 1501 Grating Selection (Spec Control)
+The grating to be used is selected by keying in
+the appropriate grating number and pressing the
+<Enter> key. Provided the GPIB communication
+is working, that grating will be moved into place
+when "Go" is selected.
+@@@ 1502 Center WaveLength (Spec Control)
+The center wavelength represents the midpoint
+of the spectral data. The default is the mid-
+point for the wavelength coverage indicated. 
+To change the center wavelength, key in the 
+new value and press <Enter>. Then select 
+"Go" and press <Enter> again.
+@@@ 1503 Go (Spec Control)
+Sends the grating selection and the center
+wavelength value to the spectrograph. 
+@@@ 1504 Reset Offset (Spec Control)
+During detector/spectrograph alignment an offset
+may be introduced between the spectrograph self-
+calibration and the actual location of spectral
+lines on the gratings. Reset Offset puts you into
+graph mode which allows you to move the cursor 
+to a known peak, press <Enter>, read the 
+perceived value and then key in the actual value
+at that point. Reset the offset for each grating.
+@@@ 1505 Reset Spectrograph (Spec Control)
+Resetting the spectrograph causes the program
+to initialize or reinitialize communication with
+the spectrograph.
+@@@ 1506 Calibration Value (Calibration & Spec Control)
+Enter here the calibrated value for the X value 
+in the column to the left. Use the Delete Point
+field to delete the point the cursor is on.
+@@@ 1600 
+Help message 1600 not implemented.
+@@@ 1700  DAD Source File Name
+Enter the name of the DOS ASCII text file containing 
+the DAD program you wish to load, including drive
+and directory information if required.
+@@@ 1701  DAD Response File Name
+Enter the name of the DOS file you wish the program
+to write as it downloads commands from the DAD
+source file. The response file includes at least
+all the commands sent and may include other items.
+Specify drive and directory information if required.
+@@@ 1702 
+Help message 1702 not implemented.
+@@@ 1703 
+Help message 1703 not implemented.
+@@@ 1800 Operand 1 (Binary screen) 
+Enter the curve set name or the constant to be
+used in the operation. At least one of the operands
+must contain at least one curve. If two operand 
+curve ranges are involved, one must be an integral
+multiple of the number of curves in the other
+operand's curve range.
+@@@ 1801 Curve Start (Binary screen)
+Enter the curve number of the curve to be 
+used as the first curve in the set of curves. The 
+default Curve Start is the first curve in the 
+named file. Curve numbers are 0-based: that is
+to say, the very first curve in an acquisition
+is Curve 0.
+@@@ 1802 Count (Binary screen)
+Enter the total number of curves to be 
+operated on. 
+@@@ 1803 Operator (Binary screen)
+Select the operator to be used in the operation.
+The operators available in this screen are +, -, 
+*, /, log, and ln.
+@@@ 1804 Operand 2 (Binary screen)
+Enter the curve set name or the constant to be 
+used in the operation. At least one of the operands
+must contain at least one curve. If two operand 
+curve ranges are involved, one must be an integral
+multiple of the number of curves in the other 
+operand's curve range.
+@@@ 1805 Curve Start (Binary screen)
+Enter the curve number of the curve to be 
+used as the first curve in the set of curves. The 
+default Curve Start is the first curve in the 
+named file. Curve numbers are 0-based: that is
+to say, the very first curve in an acquisition
+is Curve 0.
+@@@ 1806 Count (Binary screen)
+Enter the total number of curves to be 
+operated on. 
+@@@ 1807 Result (Binary screen)
+Enter the curve set name to used as the destination
+for the result/s of the calculation.
+@@@ 1808 Curve Start (Binary screen)
+Enter the curve number of the curve to be used
+as the first curve in the resulting set of curves. 
+The default Curve Start is the first curve, Curve 0,
+in the named result file. 
+@@@ 1809 Count (Binary screen)
+Enter the total number of curves. The number of
+curves in the result curve set must be the same
+number as the number of curves produced by the 
+operands. 
+@@@ 1810 Calculate (Binary screen)
+Performs the indicated operation. The result
+is stored in the named result curve set.
+@@@ 1811
+Help message 1811 not implemented.
+@@@ 1900 Data acquisition mode
+Enter the number of the Data Acquisition (DA) 
+Mode to be used. 
+If you are not sure which built-in or custom DA
+Mode to use, refer to the OMA 2000 manual. Data
+size is reported as either 16 bit or 32 bit depending
+on DA Mode.
+@@@ 1901 Detector type (Setup screen)
+This field indicates the type of detector being used. 
+There are basically two types of arrays available: Photo
+Diode Arrays (PDA) and Charge-Coupled Devices (CCD) for
+which the reported values are as follows:-
+
+        NONE      No detector is connected.
+        
+        1463 PDA  A 1412/142X series diode array detector 
+                  is being used with a 1463 Detector
+                  Interface card set fitted to a 1461 
+                  Detector Controller
+        
+        1462 PDA  Either a 145X series diode array
+                  detector is being used with a 1462
+                  Detector Interface card set (with or
+                  without the option 1462/99) fitted
+                  in a 1461 Detector Controller
+                  or a 145X series detector is being
+                  used with a 1471A Detector Controller
+
+        1464      A 143X series CCD detector is being used
+                  with a 1464 Detector Interface fitted to 
+                  a 1461 Detector Controller
+
+Check your detector manual to determine the appropriate 
+interface/controller. 
+@@@ 1902 number of memories
+This is the number of memories that curves will
+be stored or accumulated into. How this number 
+is used is determined by the current Data 
+Acquisition Mode.
+@@@ 1903 detector temp (mention locked)
+This is the temperature in degrees C. that the cooler
+on the detector head will try to reach and maintain.
+The colder the temperature, the better the dark
+current value will be; but unless your detector is the
+Cryo-CCD detector, the coldest temperatures will 
+require water cooling. Refer to the detector manual for
+more information.
+@@@ 1904 number of scans
+This is the number of light-accumulating scans that
+will be taken while data acquisition is active. How
+this number is used is determined by the current 
+Data Acquisition Mode.
+@@@ 1905 number of ignored scans
+This is the number of scans which will be taken
+at the current exposure time, but not used.
+This is often used to build a delay into the
+data acquisition routine between events. How 
+this number is used is determined by the current 
+Data Acquisition Mode.
+@@@ 1906 source compensation
+The Source Compensation value is an extra analog
+input value that you can use to compensate for
+variations in the light source during the exposure.
+The analog value input at the SOURCE COMP IN connec-
+tor is converted to digital format and stored with 
+each curve. 
+You may choose to integrate the Source Comp input 
+while the detector is integrating, or you may choose
+to sample the input at the end of the exposure time.
+If you choose to integrate, different time constants
+may be selected to control the sensitivity and satur-
+ation level of the source comp channel.
+@@@ 1907 Exposure Time
+This is the amount of time that light will be gathered 
+during one complete scan of the detector element. 
+The exposure time depends on many different parameters
+such as the type of detector element, the scan setup,
+and others. Note that this field automatically prevents
+you from entering an exposure time outside of the
+acceptable minimum and maximum time limits. This is
+a scaled field, so to enter 100 milliseconds, for 
+example, type 100m.
+@@@ 1908 
+Help message 1908 not implemented.
+@@@ 1909
+Help message 1909 not implemented.
+@@@ 1910
+Help message 1910 not implemented.
+@@@ 1911
+Help message 1911 not implemented.
+@@@ 1912
+Help message 1912 not implemented.
+@@@ 1913 Pulser Type 
+This field shows the pulser connected to
+the system, as follows:-
+
+        NONE       No pulser connected
+
+        1303       1303 Gate Pulse Interface
+                   fitted in the 1461 Detector
+                   Controller
+
+        1211       1211 Pulser controlled via
+                   1461/98 HSSP option fitted
+                   in the 1461 Detector 
+                   Controller
+
+        1302       1302 Pulser controlled via
+                   1461/98 HSSP option fitted
+                   in the 1461 Detector
+                   Controller
+
+Systems fitted with a model 1303 usually use a model
+1304 Gate Pulse Amplifier as well.
+@@@ 1914 1303 Triggered/Free Run 
+This selects the trigger status for the model 1303:-
+
+        TRIGGERED  The 1303 will trigger on receipt
+                   of an external optical/electrical
+                   trigger.
+
+        FREE RUN   The 1303 will self-trigger 
+                   continuously.
+
+@@@ 1915 1303 Continuous/One Shot.
+This selects the trigger mode for the model 1303:-
+
+        CONTINUOUS Triggers once for each electrical/
+                   optical trigger applied. Max rate
+                   = 1/(Delay + Width + 200ns)
+
+        ONE SHOT   Triggers only on receipt of first
+                   valid trigger pulse following
+                   start of acquistion.
+@@@ 1916 Pulser Delay
+This sets the delay from the application of a trigger 
+pulse to the opening of the detector's gate. Allowable
+ranges differ for different pulsers as follows:-
+
+        1303    0 - 10ms in increments of 1ns
+        
+        1211    0 - 999ms
+
+        1302    0 - 256ns
+
+@@@ 1917 Pulse Width
+This sets the gate pulse width for the model 1303 and
+1211 pulsers; the width for the model 1302 is set by
+hardware switches on that unit. Allowable ranges differ
+for the different pulsers as follows:-
+
+        1303    100ns - 10ms set in increments
+                of 0.5 per cent of full scale (200 
+                steps/range). 
+                Range is set by push-button on
+                1304 Pulse Amplifier.
+
+        1211    100ns - 999us
+@@@ 1918 1304 enable/disable. 
+This enables or disables the model 1304 pulse amplifier.
+When set to "Enable" and when output push button on
+the model 1304 pulse amplifier is "Enabled" then the
+1304 will output gate pulses.
+@@@ 1919 Cooler On/Off
+This toggle field is used to turn the cooler on or off.
+@@@ 2000 1463 Programmed Trigger
+The model 1463 Detector Interface has a Programmed
+Trigger output on the 1463 Scan Control Card. This field
+turns the programmed trigger "on" or "off". The trigger
+can be set to a default "High" or "Low" logic level and
+be programmed to switch to the opposite state during 
+readout of a certain group of pixels.
+
+
+@@@ 2001 Low/High Programmed Trigger
+This sets whether the programmed trigger will generate
+a positive (High) pulse or a negative (Low) pulse during
+the readout of the selected group of pixels.
+@@@ 2002 Pixel Number
+This defines the number of the pixel at which, during
+readout, a programmed trigger starts. 
+@@@ 2003 Pixel Times
+This defines the width of the programmed trigger output
+generated during redout of the array in terms of number 
+of pixel readout times. Each pixel time is either 0.5us
+(for fast readout during grouping or fast access) or
+16us (normal operation)
+
+@@@ 2004 synchronization
+The Synchronization selected determines when the
+array will be scanned. The synchronizations 
+are:
+   Internal (Normal):  Scanning is continuous, with
+      each scan immediately following the completion
+      of the previous scan. 
+   Line: Scanning is synchronized to the power line 
+      frequency. 
+   External:  Scanning is synchronized to an external
+      trigger received at the Sync Input connector on
+      the Scan Control card.
+@@@ 2005 Scan Setup 
+The 1463 Detector Interface can be set to read only
+selected groups of pixels during array scanning and
+to group together pixels prior to readout. This field 
+should be programmed with a string of 1461 commands 
+used to set up the 1463, seperated from each other
+with a semi-colon. Use capital letters for the commands. 
+
+Remember that you can pres "+" to expand the field to
+the full screen width. Press "-" to reduce the field
+back to its normal size.
+
+The Scan Setup commands are as follows:-
+
+        SS      Scan Setup. This should be the first 
+                entry and prepares the 1461 for the
+                following series of scan setup commands.
+        AN      All Normal. Specifies that all pixels 
+                are to be read out normally, at 16us/
+                pixel.
+        NORM n  Specifies that the next n pixels will
+                be read out normally at 16us/pixel
+        FA n    Fast Access. Resets the next n pixels
+                but does not read their values, at 
+                0.5us/pixel.
+        GR n    Grouped Regions. Specifies that n grouped
+                regions follow, each of which will contain
+                the number of pixels specified by the GS
+                command.
+        GS n    Group Size. Specifies the number of pixels
+                n to be grouped together and read out as a
+                single pixel. n must be even. The readout 
+                time for the group will be 
+                (2*16us + (n-2)*0.5us)
+        ES      End Setup. This should be last entry and
+                indicates the end of the setup entry to the
+                1461
+Examples:-
+
+The simplest entry is:-
+        
+        SS; AN; ES;   This sets up all-normal readout of 
+                      the array.
+
+If you have a 1420 with an active region from pixel 180
+to 880, you can set up the scan to discard the invalid
+data from the ends of the array as follows:-
+
+        SS; FA 180; NORM 700; FA 144; ES;
+
+@@@ 2100 Pixel Time
+The Pixel Time is the time it takes to scan a pixel.
+The actual time varies between detector types as 
+follows:-
+
+        145X series Diode Array using 1462 
+        and 1461 Detector Controller:- 
+        
+                28us
+                
+        145X series Diode Array using 1462/1462/99
+        and 1461 Detector Controller:-
+        
+                18.5us or 28us if on Normal sync.
+                28us if on Line sync.
+                
+        145X series Diode Array using 1471A 
+        Detector Controller:-
+        
+                18.5us or 28us if on Normal sync.
+                28us if on Line sync.
+
+        1412/142X series Diode Array using 1463
+        and 1461 Detector Controller:-
+        
+                16us 
+                
+        143X series CCD detector using 1464 and
+        1461 Detector Controller:-
+
+                21.5us
+        
+The shorter times have the disadvantage of higher noise.
+@@@ 2200 preparation frames
+Enter the number of preparation frames to be taken
+and discarded before actually beginning to take and
+store data. 
+@@@ 2201 Shutter Sync
+The source for the Shutter Sync signal may be either
+External or Line. If Don't Wait is chosen for a
+shutter action, the Shutter Sync signal for that
+action is generated internally by the detector.
+@@@ 2202 Sync Open
+You may choose to have the detector wait for a Shutter
+Sync signal before opening.
+@@@ 2203 Sync Close
+You may choose to have the detector wait for a Shutter
+Sync signal before closing.
+@@@ 2204 Internal/External Experiment Start
+This field specifies whether data acquistion
+will begin immediately after pressing the
+Go Live or Go Accum keys in the software (Internal) or
+whether it will wait after one of these keys has been
+pressed for a trigger at the 1464 scan control card's
+BNC connector (External)
+@@@ 2205 shutter normal/forced (CCD)
+The CCD shutter can be allowed to operate normally
+or it can be forced to open and remain open or to
+close and remain closed. When the shutter operates
+normally, it opens and closes as instructed by the
+Data Acquisition mode and the shutter synchronization.
+When the shutter is forced open or forced closed, it
+remains in that position in spite of the acquisition
+mode and shutter synchronization until it is returned
+to normal operation.
+@@@ 2206 source compensation
+The Source Compensation value is an extra analog
+input value that you can use to compensate for
+variations in the light source during the exposure.
+The analog value input at the SOURCE COMP IN connec-
+tor is converted to digital format and stored with 
+each curve. 
+You may choose to integrate the Source Comp input 
+while the detector is integrating, or you may choose
+to sample the input at the end of the exposure time.
+If you choose to integrate, different time constants
+may be selected to control the sensitivity and satur-
+ation level of the source comp channel.
+@@@ 2207 Omit/Include
+If you have selected either Wait for Sync on Open,
+Wait for Sync on Close or both then this field 
+specifies whether the mininum shutter opening
+time is the defined Exposure Time (Include) or
+whether the defined Exposure Time will be ignored
+(Exclude)
+@@@ 2300 plot title
+The text entered into this field will be used
+as the title of the plot. It will be centered
+on the top of the plot area.
+@@@ 2301 X axis label (Plot Setup)
+This is an optional label for the X axis. Note that
+the units for this axis are selected in another field,
+so it is not necessary to enter the units here.
+@@@ 2302 X axis min value (Plot Setup)
+Enter the minimum value for the X axis. This may 
+be modified if autoscaling is active.
+@@@ 2303 X axis max value (Plot Setup)
+Enter the maximum value for the X axis. This may
+be modified if autoscaling is active.
+@@@ 2304  X axis units (Plot Setup)
+Select the units most appropriate for what the 
+X axis represents, if the default shown is not 
+applicable.
+@@@ 2305 orientation
+"Left" or "Right" refers to the viewer perspective 
+for three-dimensional plots.
+@@@ 2306 % x
+This value is the percentage of the X axis 
+that the Z axis covers.
+@@@ 2307 % y
+This value is the percentage of the Y axis 
+that the Z axis covers.
+@@@ 2308 format
+The Plot Format allows you to choose the
+presentation style for the plot. The styles
+available are:
+   Overlapping Lines:  This is a plot in X, Y, and
+      Z axes. Successive curves overlap previously
+      drawn curves.
+   Hidden Line:  This is a plot in X, Y, and Z axes.
+      Portions of successive curves are removed if 
+      they are "hidden" by previously drawn curves.
+      This improves the clarity of the plot, at the
+      expense of slower drawing.
+   False Color:  This is a plot in X and Z axes. 
+      Fifteen different colors are used to indicate 
+      variations in intensity. 
+@@@ 2309 Multiple Window Style
+Select the index of the plotting window style
+that matches the desired layout and number of
+windows.
+
+Style 1:  1 Window
+--------------------------------
+|                              |
+|                              |
+|                              |
+|                              |
+|                              |
+|                              |
+|                              |
+|                              |
+|                              |
+|                              |
+--------------------------------
+
+Style 2:  2 Windows
+--------------------------------
+|                              |
+|                              |
+|                              |
+|                              |
+|                              |
+|------------------------------|
+|                              |
+|                              |
+|                              |
+|                              |
+|                              |
+--------------------------------
+
+Style 3:  2 Windows
+--------------------------------
+|               |              |
+|               |              |
+|               |              |
+|               |              |
+|               |              |
+|               |              |
+|               |              |
+|               |              |
+|               |              |
+--------------------------------
+
+Style 4:  3 Windows
+--------------------------------
+|                              |
+|                              |
+|                              |
+|------------------------------|
+|                              |
+|                              |
+|                              |
+|------------------------------|
+|                              |
+|                              |
+|                              |
+--------------------------------
+
+Style 5:  3 Windows
+--------------------------------
+|               |              |
+|               |              |
+|               |              |
+|               |              |
+|               |              |
+|------------------------------|
+|                              |
+|                              |
+|                              |
+|                              |
+|                              |
+--------------------------------
+
+Style 6:  3 Windows
+--------------------------------
+|               |              |
+|               |              |
+|               |              |
+|               |              |
+|               |--------------|
+|               |              |
+|               |              |
+|               |              |
+|               |              |
+--------------------------------
+
+Style 7:  4 Windows
+--------------------------------
+|               |              |
+|               |              |
+|               |              |
+|               |              |
+|---------------|--------------|
+|               |              |
+|               |              |
+|               |              |
+|               |              |
+--------------------------------
+
+Style 8:  4 Windows
+--------------------------------
+|                              |
+|                              |
+|------------------------------|
+|                              |
+|                              |
+|------------------------------|
+|                              |
+|                              |
+|------------------------------|
+|                              |
+|                              |
+--------------------------------
+
+Style 9:  6 Windows
+--------------------------------
+|                              |
+|------------------------------|
+|                              |
+|------------------------------|
+|                              |
+|------------------------------|
+|                              |
+|------------------------------|
+|                              |
+|------------------------------|
+|                              |
+--------------------------------
+
+Style 10:  8 Windows
+--------------------------------
+|------------------------------|
+|------------------------------|
+|------------------------------|
+|------------------------------|
+|------------------------------|
+|------------------------------|
+|------------------------------|
+--------------------------------
+
+@@@ 2310 auto redraw
+If this option is enabled, the plot on the
+screen will automatically be redrawn after
+anything was drawn over the plot.
+@@@ 2311 Autoscale X
+If this option is enabled, the X axis will
+be automatically scaled when the AutoScale
+function key is pressed.
+@@@ 2312 zero tick mark
+If this option is enabled, a tick will always
+be drawn at the zero crossing for the axis.
+@@@ 2313 vary line colors
+If this option is enabled, each successive
+curve drawn will be a different color,
+chosen in rotation from the total number
+of colors available.
+@@@ 2314 vary line type
+Message not implemented.
+@@@ 2315 connect points
+If this option is enabled, all points in a
+curve will be connected; otherwise, a
+succession of points will be drawn.
+@@@ 2316 Active Plot Setup
+This field is a toggle field that chooses
+the currently active plotting setup parameters.
+8 choices are available, which may be mapped to
+any of the display windows. NOTE: The curves
+to be displayed are associated with this plot 
+setup number, not the window number.
+@@@ 2317 Y axis label (Plot Setup)
+This is an optional label for the Y axis. Note that
+the units for this axis are selected in another field,
+so it is not necessary to enter the units here.
+@@@ 2318 Y axis min (Plot Setup)
+Enter the minimum value for the Y axis. This
+may be modified if autoscaling is active.
+@@@ 2319 Y axis max (Plot Setup)
+Enter the maximum value for the Y axis. This
+may be modified if autoscaling is active.
+@@@ 2320 Y axis units (Plot Setup)
+The Y axis units are expressed as "Intensity". 
+@@@ 2321 Z axis label (Plot Setup)
+This is an optional label for the Z axis. Note that
+the units for this axis are selected in another field,
+so it is not necessary to enter the units here.
+@@@ 2322 Z axis min (Plot Setup)
+Enter the minimum value for the Z axis. This
+may be modified if autoscaling is active.
+@@@ 2323 Z axis max (Plot Setup)
+Enter the maximum value for the Z axis. This
+may be modified if autoscaling is active.
+@@@ 2324 Z axis units (Plot Setup)
+The Z axis units are expressed as "Pixels/None". 
+@@@ 2325 Label Peaks (Plot Setup)
+If this option is enabled, peak labels will be
+drawn for all curves in the window for which
+peak thresholds have been set. To set a peak
+threshold : F10 to graphics mode, F9 to select
+the desired window, up/down arrow to select
+curve, ALT-P to display the peak threshold,
+up/down arrow to move the threshold, ENTER to
+set the threshold ( ESCAPE to cancel ).
+@@@ 2326 Autoscale Y axis
+If this option is enabled, the Y axis will
+be automatically scaled when the AutoScale
+function key is pressed. This may be 
+confusing since level changes will not be 
+immediately apparent without looking at 
+the axis values at the edge of the plot.
+@@@ 2327 Autoscale Z axis
+If this option is enabled, the Z axis will
+be automatically scaled when the AutoScale
+function key is pressed.
+@@@ 2328 ActiveWindow
+This is a toggle field that chooses the currently 
+active plotting window. Up to 8 choices are 
+available, which may be used with any plotting
+setup. NOTE: The curves to be displayed are 
+associated with the plot setup number, not this
+window number.
+@@@ 2400 Input curve name (Translate scr)
+Enter the curve set name of the curve set to be
+translated. All or part of the data in a 
+file can be translated.
+@@@ 2401 From Curve # (Translate scr)
+Enter the number of the first curve from the curve 
+set to be translated. The default number is the
+first curve in the file, usually Curve 0.
+@@@ 2402 To Curve # (Translate scr)
+Enter the total number of curves to be translated.
+The default is the number of curves in the curve set.
+@@@ 2403 Output filename (Translate scr)
+Enter a filename to be used for the file created
+when the curve set is translated and stored to disk.
+@@@ 2404 Output format (Translate scr)
+Select the type of output format. Data acquired 
+with the OMA 2000 program can be translated into
+the Model 1460 OMA format, Model 1470 format or
+into one of the following four ASCII formats:
+   Single column  
+   Single column with the X axis calibration
+   Multicolumn
+   Multicolumn with X axis calibration
+@@@ 2405 Go (Translate screen)
+Causes the specified curve set to be translated
+into the selected data format and saved to disk 
+under the filename entered. 
+@@@ 2500 I/O Port Address (Det 1)
+Enter the GPIB address that has been set in the
+Detector Controller for this detector. The default
+address is "12", but since each controller in the system 
+should have its own address, you may need to change the 
+setting. Please consult the Detector Controller
+manual for information about changing the GPIB
+address. If the Controller does not respond, check
+to see that the correct GPIB address has been
+entered here.
+@@@ 2501 Read Setup
+The Run Setup and Scan Setup parameters for a 
+detector can be entered manually in the Run/Setup
+and Scan screens or they can be set by reading
+from another detector.
+The three actions available are: 
+   Read Setup from Detector:  Reads the Run Setup
+      and the Scan Setup parameters from the 
+      selected detector and places that information
+      in the host computer's memory. 
+   Send Setup to Detector:  Sends the Run Setup
+      and Scan Setup parameters in the host computer's
+      memory to the selected detector.
+   Read Data from Detector:  Reads the data from
+      the selected detector after a Broadcast Run.
+@@@ 2504 I/O Port Address (Det 2)
+Enter the GPIB address that has been set in the
+Detector Controller for this detector. The default
+address is "12", but since each controller in the system 
+should have its own address, you may need to change the 
+setting. Please consult the Detector Controller
+manual for information about changing the GPIB
+address. If the Controller does not respond, check
+to see that the correct GPIB address has been
+entered here.
+@@@ 2505 I/O Port Address (Det 3)
+Enter the GPIB address that has been set in the
+Detector Controller for this detector. The default
+address is "12", but since each controller in the system 
+should have its own address, you may need to change the 
+setting. Please consult the Detector Controller
+manual for information about changing the GPIB
+address. If the Controller does not respond, check
+to see that the correct GPIB address has been
+entered here.
+@@@ 2506 I/O Port Address (Det 4)
+Enter the GPIB address that has been set in the
+Detector Controller for this detector. The default
+address is "12", but since each controller in the system 
+should have its own address, you may need to change the 
+setting. Please consult the Detector Controller
+manual for information about changing the GPIB
+address. If the Controller does not respond, check
+to see that the correct GPIB address has been
+entered here.
+@@@ 2507 I/O Port Address (Det 5)
+Enter the GPIB address that has been set in the
+Detector Controller for this detector. The default
+address is "12", but since each controller in the system 
+should have its own address, you may need to change the 
+setting. Please consult the Detector Controller
+manual for information about changing the GPIB
+address. If the Controller does not respond, check
+to see that the correct GPIB address has been
+entered here.
+@@@ 2508 I/O Port Address (Det 6)
+Enter the GPIB address that has been set in the
+Detector Controller for this detector. The default
+address is "12", but since each controller in the system 
+should have its own address, you may need to change the 
+setting. Please consult the Detector Controller
+manual for information about changing the GPIB
+address. If the Controller does not respond, check
+to see that the correct GPIB address has been
+entered here.
+@@@ 2509 I/O Port Address (Det 7)
+Enter the GPIB address that has been set in the
+Detector Controller for this detector. The default
+address is "12", but since each controller in the system 
+should have its own address, you may need to change the 
+setting. Please consult the Detector Controller
+manual for information about changing the GPIB
+address. If the Controller does not respond, check
+to see that the correct GPIB address has been
+entered here.
+@@@ 2510 I/O Port Address (Det 8)
+Enter the GPIB address that has been set in the
+Detector Controller for this detector. The default
+address is "12", but since each controller in the system 
+should have its own address, you may need to change the 
+setting. Please consult the Detector Controller
+manual for information about changing the GPIB
+address. If the Controller does not respond, check
+to see that the correct GPIB address has been
+entered here.
+@@@ 2511 Broadcast run (Config)
+Sends the "Run" command to all of the detectors
+with a listed GPIB address other than "0". Data
+that is acquired by a detector is held in its Detector
+Controller memory and is not transferred to the host
+computer until that detector is selected and the Read
+Data from Detector action is selected. Data received
+is stored in the host computer's memory under the
+default name of "ACCUMn.DAT", where "n" is the
+detector number. Storing the data to disk is 
+performed via the Curve Directory.
+@@@ 2512 Line Frequency (Config)
+Select the frequency in Hertz of the power line 
+the system is plugged into. For the United States,
+Canada, and many other countries, 60 Hz is the
+standard. Many European countries have 50 Hz
+as their standard.
+@@@ 2513 Go
+Perform the action chosen on the left
+with the selected detector.
+@@@ 2530
+Help message 2530 not implemented.
+@@@ 2531 line frequency
+Select the frequency in Hertz of the power line 
+the system is plugged into. For the United States,
+Canada, and many other countries, 60 Hz is the
+standard. Many European countries have 50 Hz
+as their standard.
+@@@ 2600 
+Help message 2600 not implemented.
+@@@ 2601 
+Help message 2601 not implemented.
+@@@ 2602 
+Help message 2602 not implemented.
+@@@ 2603 
+Help message 2603 not implemented.
+@@@ 2604
+Help message 2604 not implemented.
+@@@ 2605 File Spec entry (Directory screen) 
+Enter a pathname and file specification to be used
+in selecting files for display in the DOS Files 
+Directory. * and ? wildcards can be used in the 
+FileSpec entry. The pathname must conform to DOS
+format. 
+@@@ 2606 
+Help message 2606 not implemented.
+@@@ 2700 
+Help message 2700 not implemented.
+@@@ 2701 
+Help message 2701 not implemented.
+@@@ 2702 
+Help message 2702 not implemented.
+@@@ 2703 File (Curve dir)
+Curve sets listed in the Curve Directory have been
+loaded into the host computer's memory from disk
+or have been acquired during the current operating
+session. Actions such as saving all or part of the
+curve set, renaming the curve set, deleting all or 
+part of the set, inserting a curve set into another,
+and modifying or entering a file description can be
+accessed by selecting the curve set listed here and
+then pressing <Enter>. The Save action is important
+because acquired Live, Live-B, Accum, and Accum-B
+data are stored in memory under curve set names
+but are not saved to disk until the Curve Directory
+Save action is performed. 
+@@@ 2800 
+Help message 2800 not implemented.
+@@@ 2801 
+Help message 2801 not implemented.
+@@@ 2802 
+Help message 2802 not implemented.
+@@@ 2803 File Selection (Directory screen) 
+The DOS Files directory allows you to select a
+file to be loaded, stored, deleted or renamed. All
+or part of the selected data file can be acted on.
+In addition, you can specify the window where data
+is to be displayed on the Plot screen.
+@@@ 2900 Selected File (Directory screen)
+The name shown in this parameter field is the one
+selected from either the Curve Directory or the
+DOS Files listing. This file or curve set is the one
+that will be acted on when "Go" is activated. 
+@@@ 2901 File Description (Directory screen)
+Displays the current description associated with the
+selected file or curve set. Because a file description
+cannot be changed once a curve set has been stored
+to a disk file, you should edit a curve set's default
+description by selecting the curve set from the
+Curve Directory, editing the current description,
+and pressing <Enter>. The new description is 
+immediately entered in the Curve Directory. When
+the curve set is saved, the new description will be
+saved as well. 
+@@@ 2902 Action (Directory screen)
+Select the desired action. A data file (curve set)
+can be renamed, be partially or totally, loaded, 
+stored, inserted into another curve set, or deleted
+from the Curve or Disk Directory. The action must
+be selected, <Enter> pressed, and "Go" entered 
+before the action will take place. Many of these
+actions are reflected in the Curve Directory.
+
+NOTE:  File or curve deletion will be from either
+the Curve Directory or the Disk Directory depending 
+on the directory used to access the file. Deletion
+from the Disk Directory removes the data from disk.
+@@@ 2903 Go (Directory screen)
+Performs the selected action. 
+@@@ 2904 Source Start Curve (Directory screen)
+Enter the starting curve number when the action
+is to be performed on a portion of the entire 
+curve set. The default Start curve is the first
+curve in the data set. Curve numbers are 
+0-based: that is to say, the very first curve 
+in an acquisition is Curve 0.
+@@@ 2905 Source # of curves (Directory screen)
+Enter the total number of curves to be acted on. 
+The default Count is the total number of curves
+in the data set.
+@@@ 2906 Destination Index# (Directory screen)
+Enter the Index number to be used when the curve
+set is loaded or when it is inserted into another
+curve set. This number specifies where in the
+Curve Directory the curve set will be listed. 
+If there are no other curves shown in the Curve
+Directory, the Index number will be 0. The Source
+Index parameter reports the index of the curve 
+set in the DOS Files directory.
+@@@ 2907 Destination Start (Directory screen)
+Enter the Start number to be assigned to the
+first curve in the data set when the curve is
+loaded.
+@@@ 2908 Assign to Setup (Directory screen)
+Enter the plot setup number to be used when the 
+curve set is displayed on the screen or plotted
+to an output device. Box 1 selects Setup 1. 
+More than one setup can be selected. The plot 
+setup is defined in the Plot/Setup screen.
+@@@ 2909 Assign to Setup (Directory screen)
+Enter the plot setup number to be used when the 
+curve set is displayed on the screen or plotted
+to an output device. Box 2 selects Setup 2. 
+More than one setup can be selected. The plot 
+setup is defined in the Plot/Setup screen.
+@@@ 2910 Assign to Setup (Directory screen)
+Enter the plot setup number to be used when the 
+curve set is displayed on the screen or plotted
+to an output device. Box 3 selects Setup 3. 
+More than one setup can be selected. The plot 
+setup is defined in the Plot/Setup screen.
+@@@ 2911 Assign to Setup (Directory screen)
+Enter the plot setup number to be used when the 
+curve set is displayed on the screen or plotted
+to an output device. Box 4 selects Setup 4. 
+More than one setup can be selected. The plot 
+setup is defined in the Plot/Setup screen.
+@@@ 2912 Assign to Setup (Directory screen)
+Enter the plot setup number to be used when the 
+curve set is displayed on the screen or plotted
+to an output device. Box 5 selects Setup 5. 
+More than one setup can be selected. The plot 
+setup is defined in the Plot/Setup screen.
+@@@ 2913 Assign to Setup (Directory screen)
+Enter the plot setup number to be used when the 
+curve set is displayed on the screen or plotted
+to an output device. Box 6 selects Setup 6. 
+More than one setup can be selected. The plot 
+setup is defined in the Plot/Setup screen.
+@@@ 2914 Assign to Setup (Directory screen)
+Enter the plot setup number to be used when the 
+curve set is displayed on the screen or plotted
+to an output device. Box 7 selects Setup 7. 
+More than one setup can be selected. The plot 
+setup is defined in the Plot/Setup screen.
+@@@ 2915 Assign to Setup (Directory screen)
+Enter the plot setup number to be used when the 
+curve set is displayed on the screen or plotted
+to an output device. Box 8 selects Setup 8. 
+More than one setup can be selected. The plot 
+setup is defined in the Plot/Setup screen.
+@@@ 3000 Filename (Methods screen)
+Enter the filename to be used when storing 
+or loading a methods file. 
+@@@ 3001 Description (Methods screen)
+Enter a descriptive label to be stored with the 
+method. If a method is being loaded, this field
+displays the label associated with that methods 
+file.
+@@@ 3002 Go (Methods screen)
+Performs the selected save or load file action.
+@@@ 3003 Action (Methods screen)
+Select whether you want to store the current 
+method or replace the current acquisition, plot,
+and scan setups with those contained in a 
+previously stored method.
+@@@ 3100 #Slices
+Enter the number of slices here. A slice
+is a group of charge sites along the X axis
+of the detector. The number of slices will
+be the number of data points in each curve.
+@@@ 3101 Slices Uniform/Non-Uninform
+Slices Uniform implies a that the x-axis is split
+into a number of slices each containing the same number
+of columns, with no ignored space between slices.
+Slices Non-Uniform allows you to enter non-overlapping
+slices comprising differing numbers of columns and 
+starting at defined columns. There may therefore be
+regions between slices which are ignored during readout.
+@@@ 3102 #Tracks
+Enter the number of tracks here. A track
+is a group of charge sites along the Y axis
+of the detector. The number of tracks will
+be the number of curves in each memory.
+@@@ 3103 Tracks Contiguous/Random
+Tracks Contiguous implies a that the y-axis is split
+into a number of tracks each containing the same number
+of rows, with no ignored space between tracks.
+Tracks Random allows you to enter non-overlapping
+tracks comprising differing numbers of rows and 
+starting at defined rows. There may therefore be
+regions between tracks which are ignored during readout.
+@@@ 3104 Shift mode 
+Selects the type of detector array readout. The 
+four types of readout are:
+   Tracks Parallel with Serial Register: 
+      The spectra are assumed to be parallel to
+      rows on the array. The serial register is
+      parallel to the tracks or spectra.
+   Tracks Perpendicular to Serial Register:  The
+      array is rotated 90 degrees the spectra are 
+      assumed to be parallel to rows on the array.
+      The serial register is perpendicular to the
+      tracks or spectra.
+   Masked (lower):  The portion of the array
+      furthest from the serial register is masked.
+      Set the track height to be equal to the
+      height of the unmasked region. Tracks are
+      read with the shutter open, so the only delay
+      between tracks is the exposure time. This 
+      mode imitates a linear photodiode array. 
+   Masked (upper):  The portion of the array
+      closest to the serial register is masked.
+      Set the track height to be equal to the height
+      of the unmasked region. When the shutter opens,
+      tracks are shifted from the unmasked region into 
+      the masked region until it is full. Then the
+      shutter is closed and the masked region is read
+      out. The only delay between tracks is thus the
+      time to shift one track into the masked area.
+      This mode imitates a streak camera. 
+@@@ 3111 Starts at column.
+This defines the column in the x-axis at which
+the given slice starts.
+@@@ 3112 No of Columns.
+This defines the number of columns in the x-axis
+grouped together during readout and considered as
+a single slice.
+@@@ 3119 Starts at row.
+This defines the row in the y-axis at which
+the given track starts.
+@@@ 3120 No of rows.
+This defines the number of rows in the y-axis
+grouped together during readout and considered as
+a single track.
+@@@ 3200  Baseline Actions (Baseline)
+These actions operate on the whole baseline curve:
+   Clear:  Deletes all knots, destroys the baseline.
+   Autogenerate from Z: Generates a new baseline
+      based on curve Z. 25 knots are generated,
+      about equally spaced along the X axis but at
+      local curve minima.
+   Increase by Z:  Adds the value of Z to every knot
+      of the baseline. This makes the entire 
+      baseline larger by Z.
+   Decrease by Z:  Subtracts the value of Z from 
+      every knot of the baseline. This makes the
+      entire baseline smaller by Z.
+@@@ 3201  Z (Baseline)
+Z is the value used by Increase/Decrease to
+add/subtract to the baseline. It is also the Z-axis
+curve number to be displayed when displaying one
+curve only.
+@@@ 3202  Threshold (Baseline)
+Enter the Threshold value. This value is used by the
+curve drawing functions that draw 'baseline w/peaks' 
+and 'zero w/peaks'. A "peak" is any point on a curve
+that exceeds the baseline curve by at least the value
+of Threshold.
+@@@ 3203 Save to: (Baseline)
+Enter the filename to be used when storing the 
+displayed curve/s. These curves will be saved to
+the named curve when <Enter> is pressed. If the
+curve already exists, they are appended at the end.
+If the curve file doesn't exist, a new one is created.
+@@@ 3204 Display Curve (Baseline)
+"X" means plot the actual curve data on the screen.
+" " means do NOT plot the actual curve data. 
+
+All displayed curves will be saved when the
+Save To function is used. 
+@@@ 3205 Baseline Draw
+"X" means plot the baseline on the screen.
+" " means do NOT plot the baseline. 
+
+All displayed curves will be saved when the 
+Save To function is used.
+@@@ 3206 Baseline w/peaks
+"X" means plot the 'baseline with peaks' curve.
+" " means do NOT plot 'baseline with peaks' curve.
+
+The curve plotted is equal to the baseline curve at
+all points where the data curve is less than
+Threshold above the baseline. It is equal to the
+data curve at those points where the data curve is
+at least as great as Threshold + the baseline curve. 
+All displayed curves will be saved when the Save To
+function is used.
+@@@ 3207 Zero w/peaks
+"X" means plot the 'zero with peaks' curve.
+" " means do NOT plot 'zero with peaks' curve.
+
+The curve plotted is equal to zero at all points
+where the data curve is less than Threshold above
+the baseline. It is equal to the data curve
+minus the baseline at those points where the data
+curve is at least as great as Threshold + the 
+baseline curve. All displayed curves will be 
+saved when the Save To function is used.
+@@@ 3208  
+" " means that all curves will be drawn.
+"X" means that only one Z-axis curve will be
+    drawn. 
+
+All displayed curves will be saved when the
+Save To function is used.
+@@@ 3209 Select (Baseline)
+Use to add new knots to the baseline. Position
+the cursor at the desired location for the new
+knot and press enter. Up to 30 knots can be 
+used to construct a baseline. Use <F10> to exit.
+@@@ 3210 Delete (Baseline)
+Deletes a knot from the baseline. The knot
+deleted is the last knot highlighted before
+leaving the knots list.
+@@@ 3300 Live to Disk Filename
+Enter the filename to be used by the program
+when a Live to Disk data acquisition is performed.
+The acquired data is automatically stored to the 
+named file on disk. 
+
+Unless this name is changed before each Live to 
+Disk acquisition, subsequent Live to Disk curves
+will overwrite the existing data. 
+@@@ 3301 # of Repetitions
+Enter the number of repetitions to be acquired and
+stored in the named Live to Disk file. The number
+of repetitions tells the program how many times data 
+acquisition is to be run when "Go" is activated. It
+can run once (1 repetition) or it can be run more 
+than once ("n" repetitions). The number of curves
+acquired depends on the Run setup and the number
+of repetitions. 
+@@@ 3302 Mode Normal/Fast (GPIB AT)
+Unless there is an AT-GPIB installed in the
+host computer, the mode of data transfer will
+be Normal. If there is an AT-GPIB, the data
+transfer can be sped up by selecting Fast. 
+@@@ 3303 Go
+Starts the Live to Disk acquisition.
+@@@ 3500 Live Capture Filename
+Enter the filename to be used by the program when
+a Live Capture is performed. The captured data is
+stored in the host computer's memory with that 
+name. Storing the data to disk is done via the 
+Curve Directory. 
+
+Unless the filename is changed before each capture,
+subsequent captured curves will also be stored in 
+this curve set. The new data does not overwrite the
+existing data; instead, it is inserted at the start
+of the curve set. 
+@@@ 3501 Capture Mode
+Live curves can be displayed and captured singly 
+or in a set of curves. Select the type of display/
+capture mode desired from the following options:
+   Single Curve (Fast):  Displays the number of 
+      memories set in the Run/Setup screen. One
+      curve is captured at a time when <F5> is
+      pressed.
+   Multiple Curve (Slow):  Displays the number of
+      memories set in the Run/Setup screen. 
+      A set of memories is captured when <F5>
+      is pressed. These memories (curves) may or
+      may not be from the same run. To guarantee
+      that the curves are from the same run, use
+      <Fl> Pause/Next and then <F5> Capture.
+@@@ 3600 Accum Set Name (Accum)
+Enter the filename to be used by the program when
+an Accum data acquisition is performed. The 
+acquired data is stored in the host computer's 
+memory with that name. Storing the data to disk is
+done via the Curve Directory. 
+
+Unless this name is changed before each Accum 
+acquisition, subsequent data will also be stored in
+this curve set. This new data does not overwrite the
+existing data; instead, it is inserted at the start 
+of the curve set. 
+@@@ 3700    Keystroke file name
+Enter the file name which is to be 
+used to store recorded macros, or
+to execute previously stored macros.
+@@@ 3701    Keystroke play or record
+Choose to record a new Keystroke macro 
+or to play back a previously stored macro.
+@@@ 3702    Keystroke delay
+Enter a delay value in seconds. This
+value will affect the playback speed.
+@@@ 3703    Keystroke Go
+Starts the Keystroke recording or play back.
+@@@ 3800    Set cursor X goto value
+Enter the X axis value that you want
+the graph cursor to jump to. 
+@@@ 3801    Set cursor Z goto value
+Enter the Z axis value (displayed curve 
+number) that you want the graph cursor 
+to jump to. 
+@@@ 3802    Cursor Jump Go
+Set the graph cursor to the requested
+X and Z values.
+@@@ 3900  Tag Curves starting curve
+Enter the Z axis value of the first curve to
+be tagged.
+@@@ 3901  Tag Curves curve number increment 
+Enter the integer tagging interval for the set
+of curves to be tagged. 1 means every curve,
+2 means every other curve, 3 means every third
+curve, etc.
+@@@ 3902  Tag Curves go
+Tag all the curves specified by the starting Z
+value and the tagging interval up to the number of
+curves currently displayed in the window.
+@@@ 3903  Copy Tag Curves Name
+Enter a name for the curve set which will be 
+created from the displayed tagged curves. If this 
+curve set already exists it may be overwritten.
+@@@ 3903  Copy Tag Curves Go
+Copy the displayed tagged curves to the curve 
+directory using the entered name. If this 
+curve set already exists it may be overwritten.
